@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "node install.js",
+    "perform": "node main.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "find-my-iphone": "^1.1.2",
+    "node-cron": "^3.0.2",
     "recaptcha-solver": "^0.2.10",
     "tesseract.js": "^4.1.2",
     "webdriverio": "^8.16.5"

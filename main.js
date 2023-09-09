@@ -287,4 +287,7 @@ const run = async () => {
     process.exit();
 }
 
-run();
+if (!module.parent)
+    run();
+
+export {run};
