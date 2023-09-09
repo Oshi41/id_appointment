@@ -290,4 +290,4 @@ const run = async () => {
 if (!module.parent)
     run();
 
-export {run};
+module.exports = {run};
