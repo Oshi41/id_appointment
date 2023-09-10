@@ -113,7 +113,8 @@ const solve_capture = async (browser, tesseract) => {
                 console.error('Error during capture solving:', e);
                 await next(); // new capture
             } finally {
-                fs.rmSync(filepath);
+                if (fs.existsSync(filepath))
+                    fs.rmSync(filepath);
             }
         }
     }
